@@ -19,28 +19,50 @@
 
 /*----число-----*/
 
-function Sum(a,b){
+//function Sum(a,b){
+//
+//    if (!isNaN(parseFloat(a,b)) && isFinite(a,b))
+//        console.log('число');
+//    else
+//        console.log('не число!');
+//    var c = a + b;
+//
+//    return c;
+//}
+//console.log(Sum(200,100));
+//
+///*----не число----*/
+//
+//function Sum(a,b){
+//
+//    if (!isNaN(parseFloat(a,b)) && isFinite(a,b))
+//        console.log('число');
+//    else
+//        console.log('не число!');
+//    var c = a + b;
+//
+//    return c;
+//}
+//console.log(Sum('ааа',100));
 
-    if (!isNaN(parseFloat(a,b)) && isFinite(a,b))
-        console.log('число');
-    else
-        console.log('не число!');
-    var c = a + b;
 
-    return c;
+
+
+
+
+
+
+/*----Date----*/
+
+shoveDate();
+function shoveDate(){
+    setInterval(function(){
+        console.clear();
+        var time = new Date();
+        var h = time.getHours();
+        var m = time.getMinutes();
+        var s = time.getSeconds();
+        var fullTime = h + ':' + m + ':' + s;
+        console.log(fullTime);
+    }, 1000);
 }
-console.log(Sum(200,100));
-
-/*----не число----*/
-
-function Sum(a,b){
-
-    if (!isNaN(parseFloat(a,b)) && isFinite(a,b))
-        console.log('число');
-    else
-        console.log('не число!');
-    var c = a + b;
-
-    return c;
-}
-console.log(Sum('ааа',100));
