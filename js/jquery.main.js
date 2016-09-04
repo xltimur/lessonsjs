@@ -54,6 +54,20 @@
 
 /*----Date----*/
 
+//shoveDate();
+//function shoveDate(){
+//    setInterval(function(){
+//        console.clear();
+//        var time = new Date();
+//        var h = time.getHours();
+//        var m = time.getMinutes();
+//        var s = time.getSeconds();
+//        var fullTime = h + ':' + m + ':' + s;
+//        console.log(fullTime);
+//    }, 1000);
+//}
+
+
 shoveDate();
 function shoveDate(){
     setInterval(function(){
@@ -62,6 +76,7 @@ function shoveDate(){
         var h = time.getHours();
         var m = time.getMinutes();
         var s = time.getSeconds();
+        if (s < 10) s = '0' + s;
         var fullTime = h + ':' + m + ':' + s;
         console.log(fullTime);
     }, 1000);
